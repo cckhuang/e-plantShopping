@@ -313,9 +313,10 @@ function ProductList({ onHomeClick }) {
                                         id="mainIconPathAttribute">
                                     </path>
                                 </svg>
+                                <span className="cart_quantity_count">{totalItems}</span>
                             </h1>
                         </a>
-                        <span className="cart_quantity_count">{totalItems}</span></div>
+                    </div>
                 </div>
             </div>
             {!showCart ? (
