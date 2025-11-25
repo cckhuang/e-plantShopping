@@ -272,7 +272,12 @@ function ProductList({ onHomeClick }) {
         }));
       };
 
-    const totalItems = cart.length;
+    const calculateTotalQuantity = () => {
+        return cart ? cart.reduce((total, item) => total + item.quantity, 0) : 0;
+    };
+
+    //const totalItems = cart.length;
+    const totalItems = calculateTotalQuantity();
 
     return (
         <div>
